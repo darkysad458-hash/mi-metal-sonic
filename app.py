@@ -75,7 +75,7 @@ try:
         contenedor_respuesta = st.empty()
 
         completion = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-20b",
             messages=st.session_state.messages,
             temperature=0.95,
             frequency_penalty=1.0,
